@@ -38,6 +38,10 @@ public class Weight {
         int totalP = total / 16;
         int totalO = totalOunces() - (totalP * 16);
         return new Weight(totalP, totalO);
-        
+
+    }
+
+    public void print(){
+        System.out.println(this.pounds + " pounds, " + this.ounces + " ounces");
     }
 }
